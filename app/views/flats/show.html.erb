@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%= @flat['name'] %></h1>
+  <!-- Two different way to build a link_to -->
+  <p><%= link_to 'Flats', root_path, class: 'btn btn-light' %></p>
+  <p>
+    <%= link_to root_path, class: 'btn btn-light' do %>
+      <i class="fas fa-home"></i>
+    <% end %>
+  </p>
+</div>
